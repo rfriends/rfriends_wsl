@@ -4,7 +4,10 @@
 # -----------------------------------------
 # 1.0 2024/11/13
 # 1.1 2024/11/16
-ver=1.1
+# 1.2 2024/12/14
+ver=1.2
+SITE=https://github.com/rfriends/rfriends3/releases/latest/download
+SCRIPT=rfriends3_latest_script.zip
 # -----------------------------------------
 echo
 echo rfriends3 for wsl $ver
@@ -38,9 +41,10 @@ sudo apt -y install openssh-server
 echo
 echo install rfriends3
 echo
-rm /home/$user/rfriends3_latest_script.zip
-wget http://rfriends.s1009.xrea.com/files3/rfriends3_latest_script.zip -O /home/$user/rfriends3_latest_script.zip
-unzip -q -o -d /home/$user /home/$user/rfriends3_latest_script.zip
+cd ~/
+rm -f $SCRIPT
+wget $SITE/$SCRIPT
+unzip -q -o $SCRIPT
 # -----------------------------------------
 echo
 echo configure samba
@@ -135,7 +139,7 @@ sudo systemctl enable atd
 sudo systemctl enable cron
 #
 sudo systemctl restart lighttpd
-#sudo systemctlrestart smbd
+#sudo systemctl restart smbd
 sudo systemctl restart atd
 sudo systemctl restart cron
 # -----------------------------------------
