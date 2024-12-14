@@ -3,7 +3,7 @@ rfriends_wslはwindowsのwsl上にrfriends3をインストールするスクリ�
 cd ~/  
 pkg install git -y  
 git clone https://github.com/rfriends/rfriends_wsl.git  
-cd rfriends_wsl
+cd rfriends_wsl  
 sh rfriends3_wsl.sh  
   
 インストール方法は以下が参考になります。  
