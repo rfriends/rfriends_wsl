@@ -1,9 +1,9 @@
 rfriends_wslはwindowsのwsl上にrfriends3をインストールするスクリプトです。  
    
 cd ~/  
-wget -O rfriends_wsl-main.zip https://github.com/rfriends/rfriends_wsl/archive/master.zip  
-unzip rfriends_wsl-main.zip  
-cd rfriends_wsl-main  
+sudo apt install git  
+git clone https://github.com/rfriends/rfriends_wsl.git  
+cd rfriends_wsl  
 sh rfriends3_wsl.sh  
   
 インストール方法は以下が参考になります。  
