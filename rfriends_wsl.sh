@@ -5,8 +5,11 @@
 # 1.0 2024/11/13
 # 1.1 2024/11/16
 # 1.2 2024/12/14
-ver=1.2
-SITE=https://github.com/rfriends/rfriends3/releases/latest/download
+# 1.3 2025/01/25 download from github
+ver=1.3
+
+#SITE=https://github.com/rfriends/rfriends3/releases/latest/download
+SITE=https://raw.githubusercontent.com/rfriends/rfriends3_core/main
 SCRIPT=rfriends3_latest_script.zip
 # -----------------------------------------
 echo
