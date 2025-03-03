@@ -146,11 +146,11 @@ sudo systemctl restart lighttpd
 sudo systemctl restart atd
 sudo systemctl restart cron
 # -----------------------------------------
-ip=`ip -4 -br a`
+ip=`ip addr show eth0 | grep "inet\b" | awk '{ print $2 }' | cut -d/ -f1`
 echo
 echo ip address is $ip .
 echo
-echo visit rfriends at http://xxx.xxx.xxx.xxx:8000
+echo visit rfriends at http://$ip:8000
 echo
 # -----------------------------------------
 # finish
