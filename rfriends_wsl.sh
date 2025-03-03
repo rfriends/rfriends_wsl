@@ -17,7 +17,7 @@ echo rfriends3 for wsl $ver
 echo
 # -----------------------------------------
 user=`whoami`
-dir=.
+dir=rfriends_wsl
 userstr="s/rfriendsuser/${user}/g"
 # -----------------------------------------
 ar=`dpkg --print-architecture`
