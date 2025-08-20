@@ -2,7 +2,9 @@
 # alpine on wsl
 # 2025/08/20
 #
-user=alpine
+if [ -z "$user" ]; then
+  export user=alpine
+fi
 
 echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel
 adduser $user -s /bin/bash 
